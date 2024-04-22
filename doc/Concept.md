@@ -10,4 +10,4 @@
 
 In this demonstration, I will show you how to deploy a simple "Hello World" application on Kubernetes using k3d. I recommend using k3d for the startup "AsciiArtify" due to its flexibility, fast deployment, and support for alternative container runtimes, such as Podman.
 
-https://asciinema.org/a/dkeuCrXeQvY43FiYDFjel2E7b
+![k3d GIF](k3d.gif)
