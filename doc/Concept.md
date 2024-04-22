@@ -12,6 +12,9 @@ In this demonstration, I will show you how to deploy a simple "Hello World" appl
 
 ![k3d GIF](k3d.gif)
 
+In this demonstration, I will show you how to deploy a simple "Hello World" application on Kubernetes using kind.
 ![kind GIF](kind.gif)
 
+
+In this demonstration, I will show you how to deploy a simple "Hello World" application on Kubernetes using minikube.
 ![minikube GIF](minikube.gif)
