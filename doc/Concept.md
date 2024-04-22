@@ -1,4 +1,4 @@
-| Характеристики            | Minikube                                               | Kind (Kubernetes IN Docker)                          | K3d                                                   |
+| Characteristics           | Minikube                                               | Kind (Kubernetes IN Docker)                          | K3d                                                   |
 |---------------------------|--------------------------------------------------------|------------------------------------------------------|-------------------------------------------------------|
 | Supported OS           | Linux, macOS, Windows                                  | Linux, macOS, Windows                                | Linux, macOS, Windows                                |
 | Supported Hypervisors  | VirtualBox, Hyper-V, KVM, Docker                       | Docker                                               | Docker, Podman (Docker alternative)                 |
