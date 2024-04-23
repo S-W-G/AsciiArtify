@@ -1,14 +1,21 @@
-Installing ArgoCD with Helm:
-- First, you need to install Helm in your Kubernetes cluster. You can find instructions for this in the official Helm documentation.
-- Then add the ArgoCD repository to Helm:
- - `helm repo add argo https://argoproj.github.io/argo-helm`
- - `helm repo update`
-- Use the following command to install ArgoCD using Helm:
- - `helm install argocd argo/argo-cd`
-- Configuring access to the ArgoCD graphical interface:
-- After installing ArgoCD, access the graphical interface (Web UI). Typically, this can be done by opening ArgoCD using a NodePort or LoadBalancer service.
-- To find the IP address or URL to access ArgoCD, use the command:
- - `kubectl get svc argocd-server -n argocd`
-- After obtaining the IP address or URL, open a web browser and navigate to this address.
-- During the first login, you may need a login and password. You can find them using the command:
- - `kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 --decode`
+Step 1.
+Configure network access to the administration port
+
+kubectl port-forward svc/argocd-server -n argocd 8080:443&
+Step 2.
+Open URL https://127.0.0.1:8080
+
+Step 3a.
+Install ArgoCD CLI https://argo-cd.readthedocs.io/en/stable/cli_installation/
+
+Step 4a.
+Get admin password
+
+argocd admin initial-password -n argocd
+OR
+Step 3b. \
+
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}"|base64 -d;echo
+Step 5. \
+
+Login as admin and use password from step 4a or 3b.
