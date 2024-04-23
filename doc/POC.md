@@ -1,7 +1,7 @@
 Встановлення ArgoCD за допомогою Helm:
 - Спочатку вам потрібно встановити Helm у вашому Kubernetes кластері. Ви можете знайти інструкції щодо цього в офіційній документації Helm.
 - Потім додайте репозиторій ArgoCD до Helm:
- `helm repo add argo https://argoproj.github.io/argo-helm`
+ `helm repo add argo https://argoproj.github.io/argo-helm`;
  `helm repo update`
 - Використайте наступну команду, щоб встановити ArgoCD, використовуючи Helm:
   `helm install argocd argo/argo-cd`
